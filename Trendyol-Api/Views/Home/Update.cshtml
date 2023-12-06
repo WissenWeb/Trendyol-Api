@@ -1,0 +1,40 @@
+﻿@model UpdateViewModel
+@using (Html.BeginForm("StokGuncelle", "Home", FormMethod.Post))
+{
+    
+    @Html.TextBoxFor(s=>s.Barcode)
+    <br />
+    @Html.TextBoxFor(s=>s.Quantity)
+
+
+
+    @Html.HiddenFor(s=>s.IsOk)
+
+
+    <input type="submit" value="Güncelle" />
+
+    <div style="width:500px;height:20px;background-color:green;display:none"></div>
+
+
+
+    
+
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+
+
+
+    $(document).ready(function () {
+
+
+       var deger =  $("#IsOk").val();
+        debugger;
+
+    });
+
+
+
+</script>
